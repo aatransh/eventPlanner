@@ -121,31 +121,31 @@
 					</div>
 				</div>
 
-				<div class="recent-grid">
+				<div class="recent-grid-data">
 					<div class="projects"> 
 						<div class="card">
 							<div class='card-header'>
-								<h3>Recent Projects</h3>
+								<h3>All Events</h3>
 
-								<button>See all <span class="las la-arrow-right"></span></button>
+								<!-- <button>See all <span class="las la-arrow-right"></span></button> -->
 							</div>
 
 							<div class="card-body">
 							   	<div class="table-responsive">
 									<table width="100%">
-										<thead>
+										<!-- <thead>
 											<tr>
 												<td>Project Title</td>
 												<td>Department</td>
 												<td>Status</td>
 											</tr>
-										</thead>
-										<tbody>
-											<tr>
+										</thead> -->
+										<tbody id="eventBody">
+											<!-- <tr>
 												<td>UI/UX Design</td>
-												<td>UI team</td>
+												 <td>UI team</td> 
 												<td>
-													<span class="status red"></span>
+												<span class="status red"></span>
 													review
 												</td>
 											</tr>
@@ -220,7 +220,7 @@
 													<span class="status purple"></span>
 													pending
 												</td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>									
 								</div>
@@ -229,7 +229,7 @@
 						</div>
 					</div>
 
-					<div class="customers">
+					<!-- <div class="customers">
 						<div class="card">
 							<div class='card-header'>
 								<h3>New Customers</h3>
@@ -328,7 +328,7 @@
 								</div>
 								</div>
 							</div>
-						</div> 		
+						</div> 		 -->
 					</div>
 
 				</div>
@@ -336,9 +336,11 @@
 			</main>
 
 		</div>
-
-
-
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+		<script src="events.js"></script>
 
 </body>
 </html>

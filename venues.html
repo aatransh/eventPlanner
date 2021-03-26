@@ -121,13 +121,13 @@
 					</div>
 				</div>
 
-				<div class="recent-grid">
+				<div class="recent-grid-data">
 					<div class="projects"> 
 						<div class="card">
 							<div class='card-header'>
-								<h3>Recent Projects</h3>
+								<h3>All Venues</h3>
 
-								<button>See all <span class="las la-arrow-right"></span></button>
+								<!-- <button>See all <span class="las la-arrow-right"></span></button> -->
 							</div>
 
 							<div class="card-body">
@@ -135,19 +135,25 @@
 									<table width="100%">
 										<thead>
 											<tr>
-												<td>Project Title</td>
-												<td>Department</td>
-												<td>Status</td>
+												<td>Name of Venue</td>
+												<td>Description</td>
+												<td>Address</td>
+												<td>Rating</td>
+												<td>Rooms</td>
 											</tr>
 										</thead>
-										<tbody>
-											<tr>
-												<td>UI/UX Design</td>
-												<td>UI team</td>
+										<tbody id="venueBody">
+											<!-- <tr>
 												<td>
-													<span class="status red"></span>
-													review
-												</td>
+													<span> 
+														<img src="cap1.png" class="userImg">
+													</span>
+													Rajvilas palace
+												  </td>
+												<td>A Very good restaurant</td>
+												<td>CTAE Udaipur</td>
+												<td>4</td>
+												<td>10</td>
 											</tr>
 
 											<tr>
@@ -220,7 +226,7 @@
 													<span class="status purple"></span>
 													pending
 												</td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>									
 								</div>
@@ -229,7 +235,7 @@
 						</div>
 					</div>
 
-					<div class="customers">
+					<!-- <div class="customers">
 						<div class="card">
 							<div class='card-header'>
 								<h3>New Customers</h3>
@@ -328,7 +334,7 @@
 								</div>
 								</div>
 							</div>
-						</div> 		
+						</div> 		 -->
 					</div>
 
 				</div>
@@ -336,9 +342,11 @@
 			</main>
 
 		</div>
-
-
-
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+		<script src="venue.js"></script>
 
 </body>
 </html>
