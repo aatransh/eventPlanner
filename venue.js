@@ -52,4 +52,5 @@ var firebaseConfig = {
 
 
     });
+    document.querySelector(".bar").style.visibility = "hidden";
   });

@@ -18,12 +18,15 @@ var firebaseConfig = {
   let password=document.querySelector("#password").value;
 
     if(usermail==="admin@eventplanner.com"&&password==="admin@21"){
+      document.getElementById("Progress").style.visibility = "visible";
       firebase.auth().signInWithEmailAndPassword(usermail,password)
       .then((userCredential) => {
-      alert("Signed In successfully...Hare Krishna");
+      //alert("Signed In successfully...Hare Krishna");
       window.location.href="heading.html";
   })
   .catch((error) => {
+    document.getElementById("Progress").style.visibility = "hidden";
+
     var errorCode = error.code;
     var errorMessage = error.message;
     alert(errorMessage);

@@ -35,5 +35,6 @@ var firebaseConfig = {
         eventBody.appendChild(tr);
         
     });
+    document.querySelector(".bar").style.visibility = "hidden";
 });
 
