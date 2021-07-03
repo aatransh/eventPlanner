@@ -19,7 +19,7 @@ var firebaseConfig = {
 
     if(usermail==="admin@eventplanner.com"&&password==="admin@21"){
       document.getElementById("Progress").style.visibility = "visible";
-      firebase.auth().signInWithEmailAndPassword(usermail,password)
+      firebase.auth().createUserWithEmailAndPassword(usermail,password)
       .then((userCredential) => {
       //alert("Signed In successfully...Hare Krishna");
       window.location.href="heading.html";
